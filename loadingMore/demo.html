@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉刷新</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="关键字搜索">
+    <meta name="author" content="描述作者资料">
+    <meta name="description" content="网页描述">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        .wrap{
+            max-width: 750px;
+            width: 100%;
+            /*height:100vh;*/
+            /*background: #f00;*/
+        }
+        .list li{
+            padding: .2rem .3rem;
+            mim-height: .95rem;
+            background: #ccc;
+            margin-bottom: .2rem;
+            color: #333;
+            font-size: .32rem;
+            line-height: .42rem;
+        }
+    </style>
+</head>
+<body>
+<div style='width:100%;height:30px;background:#ccc;'>
+    <div style='width:70%;height:30px;background:#f00;'></div>
+</div>
+<div class="wrap">
+    <ul class="list">
+    </ul>
+</div>
+</body>
+<script>
+    document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    window.onresize=function () {
+        document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    };
+</script>
+<script src="../jquery.min.js"></script>
+<script>
+    var page = 1, //分页码
+            off_on = false, //分页开关
+            timers = null; //定时器
+    $(function(){
+        $(window).load(function() {
+            LoadingMore();
+        });
+        $(window).scroll(function(){
+            var viewH =$(this).height(),//可见高度
+                    contentH =$('.wrap')[0].scrollHeight,//内容高度
+                    scrollTop =$(this).scrollTop();//滚动高度
+            if(contentH - viewH - scrollTop <= 100) { //到达底部100px时,加载新内容
+                clearTimeout(timers);
+                //这里还可以用 [ 延时执行 ] 来控制是否加载 （这样就解决了 当上页的条件满足时，一下子加载多次的问题啦）
+                timers = setTimeout(function() {
+                    page++;
+                    if(page > 5){
+                        console.log('没有数据了')
+                    }else {
+                        console.log("第" + page + "页");
+                        LoadingMore(); //调用执行上面的加载方法
+                    }
+                }, 300);
+            }
+        });
+    });
+    function LoadingMore(){
+        pageNum =1;
+        $.ajax({
+            type:"get",
+            url:"https://jsonblob.com/api/jsonBlob/c0619f51-0591-11e8-a517-57704359a10c",
+            async:true,
+            dataType:"json",
+            data:{
+            },
+            error:function(){
+//                console.log("失败");
+            },
+            success:function(req){
+//                console.log(req.result)
+                var str= "";
+                for(var i=0; i<req.result.length; i++){
+                    str+="<li>"+req.result[i].id+'、'+req.result[i].content+"</li>";
+                }
+                $('.list').append(str);
+                off_on = true;
+            }
+        });
+    }
+
+</script>
+</html>

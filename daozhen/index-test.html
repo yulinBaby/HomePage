@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导诊测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="关键字搜索">
+    <meta name="author" content="描述作者资料">
+    <meta name="description" content="网页描述">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-color">
+
+<!--弹出框提示布局-->
+<div class="modal-mask"></div>
+<div class="modal-container">
+    <div class="modal-head">温馨提示</div>
+    <div class="modal-body">
+        确认要提前结束答题吗？
+    </div>
+    <div class="modal-footer">
+        <a class="modal-default-button" id="cancel-button">取消</a>
+        <a class="modal-default-button" id="affirm-button">确认</a>
+    </div>
+</div>
+<div class="wrap">
+    <div class="header">
+        <a class="back_icon" href="javascript:history.go(-1)"></a>
+        <h3>导诊测试</h3>
+        <span class="stop-test">提前结束答题</span>
+    </div>
+
+    <div class="statement"><p>声明：智能导诊不能代替线下执业医生的诊疗，以下结果只能作为建议。</p></div>
+    <div class="test-box">
+        <div class="question-answer question-answer-radio">
+            <!--左边客服行列-->
+            <div class="question clearfix" id="question1">
+                <!--左边的客服头像-->
+                <div class="service-pic"><img src="images/service.png" alt=""></div>
+                <!--右边的问题及其修改情况-->
+                <div class="question-box">
+                    <div class="service-question">
+                        <h4 class="question-title">请问咳嗽最早出现时间是一下哪种情况？</h4>
+                        <div class="question_option question_option_radio clearfix">
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio101" value="1">
+                                <label class="info_label" for="radio101">3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio102" value="1">
+                                <label class="info_label" for="radio102">4天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio103" value="2">
+                                <label class="info_label" for="radio103">6天-15天3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio104" value="1">
+                                <label class="info_label" for="radio104">13天-15天3天-15天3天-5天3天-5天3天-5天3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio105" value="2">
+                                <label class="info_label" for="radio105">23天-25天</label>
+                            </p>
+                        </div><!--question_option-->
+                    </div><!--service-question-->
+                    <p class="question-amend">修改</p>
+                </div><!--question-box-->
+            </div><!--question-->
+            <!--右边确认答案行列-->
+            <div class="answer clearfix">
+                <div class="user-pic"><img src="images/man.png" alt=""></div>
+                <div class="user-answer">3天-5天</div>
+            </div>
+        </div>
+        <div class="question-answer question-answer-radio">
+            <!--左边客服行列-->
+            <div class="question clearfix" id="question2">
+                <!--左边的客服头像-->
+                <div class="service-pic"><img src="images/service.png" alt=""></div>
+                <!--右边的问题及其修改情况-->
+                <div class="question-box">
+                    <div class="service-question">
+                        <h4 class="question-title">请问咳嗽最早出现时间是一下哪种情况？</h4>
+                        <div class="question_option question_option_radio clearfix">
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio01" value="1">
+                                <label class="info_label" for="radio01">3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio02" value="1">
+                                <label class="info_label" for="radio02">4天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio03" value="2">
+                                <label class="info_label" for="radio03">6天-15天3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio04" value="1">
+                                <label class="info_label" for="radio04">13天-15天3天-15天3天-5天3天-5天3天-5天3天-5天</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="option1" class="input_radio" id="radio05" value="2">
+                                <label class="info_label" for="radio05">23天-25天</label>
+                            </p>
+                        </div><!--question_option-->
+                    </div><!--service-question-->
+                    <p class="question-amend">修改</p>
+                </div><!--question-box-->
+            </div><!--question-->
+            <!--右边确认答案行列-->
+            <div class="answer clearfix">
+                <div class="user-pic"><img src="images/man.png" alt=""></div>
+                <div class="user-answer">3天-5天</div>
+            </div>
+        </div>
+        <div class="question-answer question-answer-checkbox">
+            <!--左边客服行列-->
+            <div class="question clearfix" id="question3">
+                <!--左边的客服头像-->
+                <div class="service-pic"><img src="images/service.png" alt=""></div>
+                <!--右边的问题及其修改情况-->
+                <div class="question-box">
+                    <div class="service-question">
+                        <h4 class="question-title">请问咳嗽最早出现时间是一下哪种情况？</h4>
+                        <div class="question_option question_option_checkbox clearfix">
+                            <p>
+                                <input type="checkbox" name="option2" class="input_radio check_no_true" id="radio21"  value="0">
+                                <label class="info_label" for="radio21">一个礼拜</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option3" class="input_radio check_no_true" id="radio22"  value="0">
+                                <label class="info_label" for="radio22">一个月</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option4" class="input_radio check_no_true" id="radio23"  value="0">
+                                <label class="info_label" for="radio23">半年</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option5" class="input_radio check_no_true" id="radio24"  value="0">
+                                <label class="info_label" for="radio24">一年以上</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option6" class="input_radio check_no" id="radio25"  value="1" title="0">
+                                <label class="info_label" for="radio25">不清楚1</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option7" class="input_radio check_no" id="radio26"  value="1" title="0">
+                                <label class="info_label" for="radio26">全不是2</label>
+                            </p>
+                            <div class="affirm-box">
+                                <button class="affirm-checkbox q-amend-on">确认</button>
+                            </div>
+                        </div>
+                    </div><!--service-question-->
+                    <p class="question-amend">修改</p>
+                </div>
+            </div>
+            <!--右边确认答案行列-->
+            <div class="answer clearfix">
+                <div class="user-pic"><img src="images/man.png" alt=""></div>
+                <div class="user-answer">3天-5天</div>
+            </div>
+        </div>
+        <div class="question-answer question-answer-checkbox">
+            <!--左边客服行列-->
+            <div class="question clearfix" id="question4">
+                <!--左边的客服头像-->
+                <div class="service-pic"><img src="images/service.png" alt=""></div>
+                <!--右边的问题及其修改情况-->
+                <div class="question-box">
+                    <div class="service-question">
+                        <h4 class="question-title">请问咳嗽最早出现时间是一下哪种情况？</h4>
+                        <div class="question_option question_option_checkbox clearfix">
+                            <p>
+                                <input type="checkbox" name="option22" class="input_radio check_no_true" id="radio31"  value="0">
+                                <label class="info_label" for="radio31">一个礼拜</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option23" class="input_radio check_no_true" id="radio32"  value="0">
+                                <label class="info_label" for="radio32">一个月</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option24" class="input_radio check_no_true" id="radio33"  value="0">
+                                <label class="info_label" for="radio33">半年</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option25" class="input_radio check_no_true" id="radio34"  value="0">
+                                <label class="info_label" for="radio34">一年以上</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option26" class="input_radio check_no" id="radio35"  value="1" title="0">
+                                <label class="info_label" for="radio35">不清楚</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="option27" class="input_radio check_no" id="radio36"  value="22" title="0">
+                                <label class="info_label" for="radio36">以上都不是</label>
+                            </p>
+                            <div class="affirm-box">
+                                <button class="affirm-checkbox">确认</button>
+                            </div>
+                        </div>
+                    </div><!--service-question-->
+                    <p class="question-amend">修改</p>
+                </div>
+            </div>
+            <!--右边确认答案行列-->
+            <div class="answer clearfix">
+                <div class="user-pic"><img src="images/man.png" alt=""></div>
+                <div class="user-answer">3天-5天</div>
+            </div>
+        </div>
+
+        <div class="question-answer last-question">
+            <!--左边客服行列-->
+            <div class="question clearfix" id="question99">
+                <!--左边的客服头像-->
+                <div class="service-pic"><img src="images/service.png" alt=""></div>
+                <!--右边的问题及其修改情况-->
+                <div class="question-box">
+                    <div class="service-question">
+                        <h4 class="question-title">非常感谢您的配合，最后一个问题：请问您最近身体状况如何？</h4>
+                        <div class="question_option clearfix">
+                            <ul class="status-list">
+                                <li>
+                                    <span class="status-text">睡眠:</span>
+                                    <div class="status-info">
+                                        <p>
+                                            <input type="radio" name="option-last1" class="input_radio" checked="checked" id="radio-last1" value="1">
+                                            <label class="info_label" for="radio-last1">正常</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="option-last1" class="input_radio" id="radio-last2" value="1">
+                                            <label class="info_label" for="radio-last2">较差</label>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="status-text">饮食:</span>
+                                    <div class="status-info">
+                                        <p>
+                                            <input type="radio" name="option-last2" class="input_radio" checked="checked" id="radio-last11" value="1">
+                                            <label class="info_label" for="radio-last11">正常</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="option-last2" class="input_radio" id="radio-last21" value="1">
+                                            <label class="info_label" for="radio-last21">较差</label>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="status-text">精神:</span>
+                                    <div class="status-info">
+                                        <p>
+                                            <input type="radio" name="option-last3" class="input_radio" checked="checked" id="radio-last12" value="1">
+                                            <label class="info_label" for="radio-last12">正常</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="option-last3" class="input_radio" id="radio-last22" value="1">
+                                            <label class="info_label" for="radio-last22">较差</label>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="status-text">大便:</span>
+                                    <div class="status-info">
+                                        <p>
+                                            <input type="radio" name="option-last4" class="input_radio" checked="checked" id="radio-last13" value="1">
+                                            <label class="info_label" for="radio-last13">正常</label>
+                                        </p>
+                                        <p>
+                                            <input type="radio" name="option-last4" class="input_radio" id="radio-last23" value="1">
+                                            <label class="info_label" for="radio-last23">较差</label>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="affirm-box">
+                                <button class="affirm-checkbox_l affirm-checkbox-on" id="affirm_checkbox">确认</button>
+                            </div>
+                        </div>
+                    </div><!--service-question-->
+                    <p class="question-amend" id="last_question_amend">修改</p>
+                </div>
+            </div>
+            <!--右边确认答案行列-->
+            <div class="answer clearfix">
+                <div class="user-pic"><img src="images/man.png" alt=""></div>
+                <div class="user-answer">
+                   <!-- <p><span class="answer-status">睡眠1：</span><em>正常</em></p>
+                    <p><span class="answer-status">饮食1：</span><em>正常</em></p>
+                    <p><span class="answer-status">精神1：</span><em>正常</em></p>
+                    <p><span class="answer-status">大便1：</span><em>正常</em></p>-->
+                </div>
+            </div>
+        </div><!--last-question-->
+    </div>
+
+
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/test.js"></script>
+<script>
+    document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    window.onresize=function () {
+        document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    };
+</script>
+<script>
+
+//0=====正常选项
+//1=======以上都不是
+    function radioQuestion(){
+        var str=" ";
+        for(var i=0; i<$('.question-answer-radio').length; i++){
+            str+="<div class='question-answer'>" +
+                    "<div class='question clearfix' id='question1'>" +
+                    "<div class='service-pic'><img src='images/service.png' alt=''></div>" +
+                    "<div class='question-box'>" +
+                    "<div class='service-question'>" +
+                    "<h4 class='question-title'>请问咳嗽最早出现时间是一下哪种情况？</h4>" +
+                    "<div class='question_option question_option_radio clearfix'>";
+                        var str2=" ";
+                        var option=$('.question_option_radio p');
+                        for(var i=0; i<option.length; i++){
+                            str2+= "<p>" +
+                                    "<input type='radio' name='option1' class='input_radio' id='radio01' value='0'>" +
+                                    "<label class='info_label' for='radio01'>3天-5天</label>" +
+                                    "</p>"
+                        }
+                        $('.question_option_radio').append(str2);
+                    str+="</div>" +
+                            "</div>" +
+                            "<p class='question-amend'>修改</p>" +
+                            "</div>" +
+                            "</div>" +
+                            "<div class='answer clearfix'>" +
+                            "<div class='user-pic'><img src='images/man.png' alt=''></div>" +
+                            "<div class='user-answer'>3天-5天</div>" +
+                            "</div>" +
+                            "</div>"
+        }
+        $('.test-box').append(str);
+    }
+
+    function checkboxQuestion(){
+    var str=" ";
+    for(var i=0; i<$('.question-answer-checkbox').length; i++){
+        str+="<div class='question-answer-checkbox'>" +
+                "<div class='question clearfix' id='question2'>" +
+                "<div class='service-pic'><img src='images/service.png' alt=''></div>" +
+                "<div class='question-box'>" +
+                "<div class='service-question'>" +
+                "<h4 class='question-title'>请问咳嗽最早出现时间是一下哪种情况？</h4>" +
+                "<div class='question_option question_option_checkbox clearfix'>";
+        var str2=" ";
+        var option=$('.question_option_checkbox p');
+        for(var i=0; i<option.length; i++){
+            if(option.eq(i).children('input').attr('value')==0){
+                str2+="<p>" +
+                        "<input type='checkbox' name='option2' class='input_radio check_no_true' id='radio21'  value='1'>" +
+                        "<label class='info_label' for='radio21'>一个礼拜</label>" +
+                        "</p>"
+            }
+            if(option.eq(i).children('input').attr('value')==1){
+                str2+="<p>" +
+                        "<input type='checkbox' name='option26' class='input_radio check_no' id='radio35'  value='1' title='0'>" +
+                        "<label class='info_label' for='radio35'>不清楚</label>" +
+                        "</p>"
+            }
+        }
+        $('.question_option_checkbox').append(str2);
+        str+="<div class='affirm-box'>" +
+                "<button class='affirm-checkbox q-amend-on'>确认</button>" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "<p class='question-amend'>修改</p>" +
+                "</div>" +
+                "</div>" +
+                "<div class='answer clearfix'>" +
+                "<div class='user-pic'><img src='images/man.png' alt=''></div>" +
+                "<div class='user-answer'>3天-5天</div>" +
+                "</div>" +
+                "</div>"
+    }
+    $('.test-box').append(str);
+}
+
+    function lastQuestion(){
+        var str=" ";
+        str+="<div class='question clearfix' id='question99'>" +
+                "<div class='service-pic'><img src='images/service.png' alt=''></div>" +
+                "<div class='question-box'>" +
+                "<div class='service-question'>" +
+                "<h4 class='question-title'>非常感谢您的配合，最后一个问题：请问您最近身体状况如何？</h4>" +
+                "<div class='question_option clearfix'>" +
+                "<ul class='status-list'>"+
+                "</ul>" +
+                "<div class='affirm-box'>" +
+                "<button class='affirm-checkbox_l affirm-checkbox-on' id='affirm_checkbox'>确认</button>" +
+                "</div></div></div>" +
+                "<p class='question-amend' id='last_question_amend'>修改</p>" +
+                "</div>" +
+                "</div>" +
+                "<div class='answer clearfix'>" +
+                "<div class='user-pic'><img src='images/man.png' alt=''></div>" +
+                "<div class='user-answer'>" +
+                "</div>" +
+                "</div>";
+        $('.last-question').append(str);
+        var str2=" ";
+        var statusList=$('.status-list li');
+        for(var i=0;i<statusList.length; i++){
+            str2+="<li>" +
+                    "<span class='status-text'>睡眠:</span>" +
+                    "<div class='status-info'>" +
+                    "<p>" +
+                    "<input type='radio' name='option-last1' class='input_radio' checked='checked' id='radio-last1' value='1'>" +
+                    "<label class='info_label' for='radio-last1'>正常</label>" +
+                    "</p>" +
+                    "<p>" +
+                    "<input type='radio' name='option-last1' class='input_radio' id='radio-last2' value='1'>" +
+                    "<label class='info_label' for='radio-last2'>较差</label>" +
+                    "</p>" +
+                    "</div>" +
+                    "</li>";
+        }
+        $('.status-list').append(str2);
+}
+
+/*    $(function(){
+        var str=" ";
+        str+="<div class='question clearfix' id='question99'>" +
+        "<div class='service-pic'><img src='images/service.png' alt=''></div>" +
+        "<div class='question-box'>" +
+        "<div class='service-question'>" +
+        "<h4 class='question-title'>非常感谢您的配合，最后一个问题：请问您最近身体状况如何？</h4>" +
+        "<div class='question_option clearfix'>" +
+        "<ul class='status-list'>"+
+        "</ul>" +
+        "<div class='affirm-box'>" +
+        "<button class='affirm-checkbox_l affirm-checkbox-on' id='affirm_checkbox'>确认</button>" +
+        "</div></div></div>" +
+        "<p class='question-amend' id='last_question_amend'>修改</p>" +
+        "</div>" +
+        "</div>" +
+        "<div class='answer clearfix'>" +
+        "<div class='user-pic'><img src='images/man.png' alt=''></div>" +
+        "<div class='user-answer'>" +
+        "</div>" +
+        "</div>";
+        $('.last-question').append(str);
+        var str2=" ";
+        var statusList=$('.status-list li');
+        for(var i=0;i<statusList.length; i++){
+            str2+="<li>" +
+                    "<span class='status-text'>睡眠:</span>" +
+                    "<div class='status-info'>" +
+                    "<p>" +
+                    "<input type='radio' name='option-last1' class='input_radio' checked='checked' id='radio-last1' value='1'>" +
+                    "<label class='info_label' for='radio-last1'>正常</label>" +
+                    "</p>" +
+                    "<p>" +
+                    "<input type='radio' name='option-last1' class='input_radio' id='radio-last2' value='1'>" +
+                    "<label class='info_label' for='radio-last2'>较差</label>" +
+                    "</p>" +
+                    "</div>" +
+                    "</li>";
+        }
+        $('.status-list').append(str2);
+
+    })*/
+</script>
+
+</html>

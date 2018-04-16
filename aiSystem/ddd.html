@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .result{position: fixed;top:0;left:0;background: rgba(0,0,0,0.5);z-index:1000;width:100%;height:100%;display: none; overflow: auto}
+        .imgresult{border:5px solid #fff;}
+        .indiv{position: absolute;}
+    </style>
+</head>
+<body>
+<div class="result" id="outdiv">
+    <div class="indiv">
+        <img class="imgresult" id="bigimg" src="">
+    </div>
+</div>
+<div class="ptb10 clearfix">支付截图：<img src="images/buy1.png"  class="imgclass img-responsive" style="width:30%;"></div>
+<div class="ptb10 clearfix">身份证图片：<img src="images/buy2.png" class="imgclass img-responsive" style="width:30%;"></div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    function showImg(outdiv,indiv,bigimg,thiselement){
+        var winW = $(window).width();
+        var winH = $(window).height();
+        var src = $(thiselement).attr('src');
+        $(bigimg).attr("src",src);
+        $("<img/>").attr("src",src).load(function(){
+            var imgW = this.width;
+            var imgH = this.height;
+            var scale= imgW/imgH;
+            if( imgW > winW ){
+                $(bigimg).css("width","100%").css("height","auto");
+                imgH = winW/scale;
+                var h=(winH-imgH)/2;
+                $(indiv).css({"left":0,"top":0});
+            }else{
+                $(bigimg).css("width",imgW+'px').css("height",imgH+'px');
+                var w=(winW-imgW)/2;
+                var h=(winH-imgH)/2;
+                $(indiv).css({"left":w,"top":0});
+            }
+
+            $(outdiv).fadeIn("fast");
+            $(outdiv).click(function(){
+                $(this).fadeOut("fast");
+            });
+        });
+    }
+    $('.imgclass').click(function(){
+        var thiselement=$(this);
+        showImg("#outdiv",".indiv","#bigimg",thiselement);
+    });
+</script>
+</html>

@@ -1,0 +1,870 @@
+html,body{
+    height: 100%;
+}
+.role{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    height: .7rem;
+    /*background: #00C1B3;*/
+    padding-top: .2rem;
+    margin-bottom: .2rem;
+}
+.role span{
+    text-align: center;
+    color: #333;
+    font-size: .3rem;
+    line-height: .46rem;
+    display: block;
+}
+.person-pic{
+    width: 100%;
+}
+.img-wrap .person{
+    width: 5.5rem;
+    min-height: 6rem;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+.img-wrap .person img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.img-wrap .person:nth-child(1){
+    display: block;
+}
+.click-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 3rem;
+}
+.man-back,.man-arse,.m-header,.m-neck,.arm,.chest,.belly,.genitals,.leg,.mask-layer,.turn-back,.doubt-symptom-list{
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.m-header{
+    display: block;
+    width: 2rem;
+    margin: 0 auto;
+    height: 1.45rem;
+    background: rgba(0, 166, 90, 0.47);
+}
+.man-header{
+    height: 1.55rem;
+}
+.woman-header{
+    height: 1.65rem;
+}
+.boy-header {
+    width: 3.7rem;
+    height: 3.7rem;
+}
+.girl-header{
+    width: 4.2rem;
+    height: 3.3rem;
+}
+.m-neck{
+    display: block;
+    width: 2.6rem;
+    margin: 0 auto;
+    height: .45rem;
+    background: rgba(170, 102, 170, 0.64);
+}
+.woman-neck{
+    height: .45rem;
+}
+.boy-neck{
+    width: 2.1rem;
+}
+.girl-neck{
+    width: .9rem;
+    height: .6rem;
+}
+.m-body{
+    display: block;
+    width: 100%;
+    min-height: 4.6rem;
+    margin: 0 auto;
+    background: rgba(85, 31, 15, 0.36);
+    display: -webkit-box;
+    overflow: hidden;
+}
+.arm{
+    display: block;
+    height: 4.8rem;
+    width: 1.7rem;
+    background: rgba(255, 255, 255, 0.55);
+}
+.l-arm{
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 76%;
+}
+.r-arm{
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 76%;
+}
+.l-b-arm{
+    border-bottom-right-radius: 50%;
+}
+.r-b-arm{
+    border-bottom-left-radius: 50%;
+}
+.wo-arm{
+    width: 1.85rem;
+    height: 3.9rem;
+}
+.boy-arm{
+    height: 3.25rem;
+}
+.girl-arm{
+    height: 3.5rem;
+}
+.c-center{
+    display: block;
+    width: 2.2rem;
+    min-height: 9.2rem;
+}
+.woman-center{
+    width: 1.8rem;
+}
+.chest,.belly,.genitals,.leg{
+    width: 100%;
+    height: 1.35rem;
+    display: block;
+    background: rgba(0, 166, 90, 0.36);
+}
+.wo-belly{
+    height: 1rem;
+}
+.wo-genitals{
+    padding: 0 10px;
+    margin-left: -12px;
+}
+.boy-belly{
+    height: .7rem;
+}
+.man-genitals{
+    padding: 0 10px;
+    margin-left: -15px;
+    height: 1.5rem;
+}
+.girl-chest{
+    height: 1.55rem;
+}
+.boy-genitals{
+    height: 1.1rem;
+    padding: .18rem;
+    margin-left: -.17rem;
+}
+.girl-belly,.girl-genitals{
+    height: 1.1rem;
+}
+.girl-genitals{
+    padding: 0 .15rem;
+    margin-left: -.18rem;
+}
+.man-back{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    background: rgba(0, 162, 212, 0.62);
+}
+.man-arse{
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+    padding: 0 .1rem;
+    margin-left: -.16rem;
+    background: rgba(18, 212, 6, 0.62);
+}
+.woman-back{
+    height: 2.4rem;
+}
+.boy-back{
+    height: 1.8rem;
+}
+.girl-back{
+    height: 2.5rem;
+}
+.boy-arse{
+    height: 1.7rem;
+}
+.woman-arse{
+    padding: 0 .16rem;
+    margin-left: -.16rem;
+}
+.girl-arse{
+    height: 1.5rem;
+}
+.belly{
+    background: rgba(166, 51, 97, 0.36);
+}
+.genitals{
+    background: rgba(17, 19, 166, 0.36);
+}
+.leg{
+    height: 5.4rem;
+    background: rgba(166, 17, 157, 0.36);
+}
+.wo-leg{
+    height: 5.5rem;
+}
+.man-leg{
+    height: 5.1rem;
+}
+.boy-leg{
+    height: 3.5rem;
+    padding: 0 .35rem;
+    margin-left: -.38rem;
+}
+.girl-leg{
+    height: 3.5rem;
+    padding: 0 .35rem;
+    margin-left: -.38rem;
+}
+
+.choose{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+    min-height: 1rem;
+}
+.choose-class{
+    width: 80%;
+    /*border: 1px solid #999;*/
+    background: #f4f4f4;
+    height: .6rem;
+    border-radius: 15px;
+    margin-bottom: .2rem;
+}
+.choose-class input{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    color: #333;
+    line-height: .6rem;
+    border: none;
+    outline: none;
+}
+.choose-class input:checked{
+    background: #7ea3ed;
+}
+.choose-class input:checked:after{
+    color: #fff;
+}
+.choose-class input:first-child{
+    float: left;
+}
+.choose-class input:last-child{
+    float: right;
+}
+.sex input:first-child:after{
+    content: "男";
+    font-size: .3rem;
+}
+.sex input:last-child:after{
+    content: "女";
+    font-size: .3rem;
+}
+.person-classify input:first-child:after{
+    content: "成人";
+    font-size: .3rem;
+}
+.person-classify input:last-child:after{
+    content: "儿童";
+    font-size: .3rem;
+}
+.turn-back{
+    background: #7ea3ed;
+    color: #fff;
+    width: 80%;
+    line-height: .6rem;
+    height: .6rem;
+    border-radius: 25px;
+    font-size: .3rem;
+    text-align: center;
+    position: relative;
+    z-index: 98;
+}
+.turn-back span{
+    width: .4rem;
+    height: .4rem;
+    padding-left: .45rem;
+    background: url("../images/s-icon.png") no-repeat center;
+    background-size: .35rem .35rem;
+}
+.mask-layer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 99;
+}
+.right-icon{
+    width: .35rem;
+    height: .29rem;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -.145rem;
+}
+.right-icon img{
+    width: 100%;
+    height: auto;
+}
+.pup-up-box{
+    width: 6rem;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    left: -6rem;
+    top: 0;
+    z-index: 199;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.list_classify {
+    width: 26%;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background: #f0f2f4;
+    padding-bottom: .2rem;
+    overflow-y: scroll;
+}
+.list_ul {
+    height: 100%;
+    overflow-y: auto;
+}
+.list_ul li {
+    height: .8rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+.list_ul li:last-child{
+    border: none;
+}
+.list_ul .on {
+    border-left: 4px #7ea3ed solid !important;
+    background: #fff;
+    text-indent: -4px;
+}
+.list_ul .on a{
+    color: #7ea3ed;
+}
+.list_ul li a {
+    display: block;
+    font-size: .28rem;
+    line-height: .8rem;
+    text-align: center;
+}
+.classify_main {
+    width: 74%;
+    max-height: 12rem;
+    overflow-y: auto;
+}
+.tab_list {
+    height: 100%;
+    overflow-y: auto;
+    overflow: hidden;
+}
+.tab_main_list{
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    padding-top: .3rem;
+}
+/*.tab_main_list::-webkit-scrollbar{
+    display: none;
+}*/
+/*.tab_list::-webkit-scrollbar {display:none}*/
+.tab_main_list li {
+    margin-bottom: .2rem;
+    padding-left: .3rem;
+    padding-bottom: .2rem;
+
+}
+.tab_main_list li a {
+    display: block;
+    font-size: .28rem;
+    color: #333;
+    line-height: .36rem;
+}
+
+
+
+
+
+/*导诊测试*/
+.wrap{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 1rem;
+    background: #7ea3ed;
+    position: fixed;
+    z-index: 900;
+    border-bottom: 1px solid #f2f2f2;
+}
+.header h3{
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    font-size: .34rem;
+}
+.back_icon{
+    position: absolute;
+    top: 50%;
+    width: .2rem;
+    height: .34rem;
+    margin-top: -.17rem;
+    left: 0.3rem;
+    background: url("../images/back_icon.png") no-repeat;
+    background-size: 100% auto;
+    outline: none;
+    cursor: pointer;
+}
+.stop-test{
+    position: absolute;
+    right: 0.3rem;
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #fff;
+    display: block;
+    top: .35rem;
+}
+.statement{
+    padding: .2rem .5rem;
+    margin-top: 1rem;
+}
+.statement p{
+    font-size: .28rem;
+    color: #333;
+    line-height: .36rem;
+}
+.test-box{
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    min-height: 3rem;
+}
+.question,.answer{
+    width: 7rem;
+    margin: 0 auto;
+    min-height: 1rem;
+    margin-bottom: .2rem;
+}
+
+.service-pic{
+    float: left;
+    width: .8rem;
+    height: .8rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: .3rem;
+}
+.service-pic img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.question-box{
+    width: 6rem;
+    float: right;
+    display: -webkit-box;
+    vertical-align: top;
+}
+.service-question{
+    background: #fff;
+    margin-top: .3rem;
+    width: 4rem;
+    min-height: .2rem;
+    border-bottom-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    padding: .3rem;
+    position: relative;
+}
+.service-question:before{
+    position: absolute;
+    content: " ";
+    background: url("../images/l-icon.png") no-repeat;
+    height: 30px;
+    width: 12px;
+    left: -12px;
+    top: 0;
+}
+.question-amend{
+    display: block;
+    cursor: pointer;
+    outline: none;
+    width: 1rem;
+    height: .45rem;
+    line-height: .45rem;
+    margin-top: .3rem;
+    background: #fff;
+    color: #7ea3ed;
+    font-size: .28rem;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: .3rem;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*.question-box .q-amend-on{
+    color: #999;
+}*/
+.question-title{
+    color: #333;
+    font-size: .3rem;
+    line-height: .48rem;
+    margin-bottom: .3rem;
+}
+.question_option p{
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    float: left;
+    min-width: 47%;
+    position: relative;
+    margin-bottom: .4rem;
+}
+.input_radio {
+    width: .36rem;
+    height: .36rem;
+    display: none;
+    background: #00a65a;
+    vertical-align: top;
+    float: left;
+}
+.input_radio[type=radio] + label {
+    float: left;
+    vertical-align: top;
+    padding-left: .5rem;
+    background: url(../images/radio.png) no-repeat;
+    background-size: 0.34rem .34rem;
+}
+.input_radio[type=radio]:checked + label{
+    background: url("../images/radio-h.png") no-repeat;
+    background-size: 0.34rem .34rem;
+}
+.input_radio[type=checkbox] + label {
+    float: left;
+    vertical-align: top;
+    padding-left: .5rem;
+    background: url(../images/checkbox.png) no-repeat;
+    background-size: 0.32rem .32rem;
+}
+.input_radio[type=checkbox]:checked + label{
+    background: url("../images/checkbox-h.png") no-repeat;
+    background-size: 0.32rem .32rem;
+}
+.info_label{
+    color: #333;
+    font-size: 0.28rem;
+    text-align: left;
+    vertical-align: top;
+}
+.no-click{
+    pointer-events: none;
+    color: #999 !important;
+}
+.no-click label{
+    color: #999 !important;
+}
+.no-click .affirm-box button{
+    border: 1px solid #999;
+    color: #999;
+}
+.no-click .status-text{
+    color: #999;
+}
+.scroll-b{
+    padding-bottom: 3rem;
+}
+.user-pic{
+    float: right;
+    width: .8rem;
+    height: .8rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: .2rem;
+}
+.user-pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.user-answer{
+    float: right;
+    margin-top: .2rem;
+    background: #7ea3ed;
+    margin-right: .2rem;
+    max-width: 5rem;
+    min-height: .1rem;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    color: #fff;
+    font-size: .3rem;
+    padding: .2rem;
+    position: relative;
+}
+.user-answer:after{
+    position: absolute;
+    content: " ";
+    width: .24rem;
+    height: .48rem;
+    background: url("../images/r-icon.png") no-repeat;
+    background-size: .24rem .48rem;
+    top: 0;
+    right: -.24rem;
+}
+.affirm-box{
+    padding-top: .3rem;
+    clear: both;
+}
+.affirm-box .affirm-checkbox,.look-detail,.affirm-checkbox_l{
+    margin: 0 auto;
+    outline: 0;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    height: .62rem;
+    width: 2rem;
+    font-size: .28rem;
+    line-height: .62rem;
+    display: block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #999;
+    color: #999;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.look-detail{
+    width: 60%;
+    margin: 0.2rem auto .5rem;
+    border: 1px solid #7ea3ed;
+    color: #7ea3ed;
+}
+.affirm-box .affirm-checkbox-on{
+    border: 1px solid #7ea3ed;
+    color: #7ea3ed;
+}
+.not-editable{
+    color: #999!important;
+}
+.bg-color{
+    background: #f2f2f2;
+    padding-bottom: 1rem;
+}
+
+
+
+
+/*导诊建议*/
+.suggest-box{
+    width: 100%;
+    background: #F2F2F2;
+    min-height: 3rem;
+    margin-top: 1rem;
+}
+.symptom{
+    background: #fff;
+    margin-bottom: .15rem;
+}
+.symptom p{
+    font-size: .3rem;
+    color: #333;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+.symptom p:first-child{
+    float: left;
+    padding-left: .3rem;
+}
+.symptom p:last-child{
+    float: right;
+    padding-right: .3rem;
+}
+.possible-symptom{
+    width: 100%;
+    background: #fff;
+}
+.possible-title{
+    font-size: .32rem;
+    color: #a1a6ad;
+    line-height: .32rem;
+    padding-top: .4rem;
+    padding-left: .3rem;
+}
+.possible-info{
+    font-size: .28rem;
+    color: #a1a6ad;
+    line-height: .42rem;
+    padding: 0.15rem .3rem .3rem;
+}
+.doubt-symptom{
+    width: 100%;
+}
+.doubt-symptom-list{
+    border-bottom: 0.5px solid #ccc;
+    min-height: 1rem;
+    background: #fff;
+    padding: .3rem;
+}
+.doubt-symptom .on{
+    background: #f4f4f4;
+}
+.symptom-list-title{
+    font-size: .28rem;
+    color: #7ea3ed;
+    padding-bottom: .24rem;
+}
+.symptom-list-title em{
+    font-size: .28rem;
+    padding-left: .2rem;
+    color: rgba(252, 143, 77, 0.86);
+}
+.symptom-list-title span{
+    float: right;
+}
+.symptom-list-title span i{
+    display: inline-block;
+    position: relative;
+    top: -.05rem;
+    margin-left: .2rem;
+    width: .27rem;
+    height: .13rem;
+    background: url("../images/up.png") no-repeat;
+    background-size: .27rem .13rem;
+}
+.symptom-list-title span .on{
+    background: url("../images/down.png") no-repeat;
+    background-size: .27rem .13rem;
+}
+.symptom-list-title span,.symptom-list-info,.symptom-main-info{
+    font-size: .28rem;
+    color: #a1a6ad;
+}
+.doubt-symptom-main{
+    background: #fff;
+    display: none;
+    border-bottom: 0.5px solid #ccc;
+}
+.symptom-main-title{
+    color: #333;
+    font-size: .32rem;
+    padding: .6rem .3rem .24rem .3rem;
+}
+.symptom-main-info{
+    padding: 0 .3rem .4rem;
+}
+.status-list{
+    width: 90%;
+    margin: 0 auto;
+}
+.status-list li:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.status-text{
+    display: block;
+    float: left;
+    font-size: .28rem;
+    color: #333;
+    /*background: #00a2d4;*/
+}
+.status-info{
+    float: right;
+    /*background: #f0a30a;*/
+    margin: 0!important;
+}
+.status-info p:last-child{
+    margin-left: .12rem;
+}
+
+
+/*=====================弹框样式=================================*/
+.modal-mask{
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    /*display: none;*/
+    visibility:hidden;
+    opacity:0;
+}
+.modal-container{
+    background: #fff;
+    box-shadow: 0 0.02rem 0.02rem rgba(0,0,0,.33);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: .1rem;
+    position: fixed;
+    width: 80%;
+    min-height: 2rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -40%;
+    margin-top: -1rem;
+    z-index: 9999;
+    visibility:hidden;
+    opacity:0;
+}
+.modal-head{
+    font-size: .28rem;
+    color: #000;
+    padding: .2rem 0;
+    text-align: center;
+}
+.modal-body{
+    font-size: .26rem;
+    color: #6d6b6b;
+    text-align: center;
+    line-height: .26rem;
+    padding-bottom: .2rem;
+}
+
+.modal-footer {
+    display: table;
+    line-height: .8rem;
+    border-top: .01rem solid #d0cfcf;
+    text-align: center;
+    width: 100%;
+}
+.modal-default-button {
+    font-size: .28rem;
+    color: #7ea3ed;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.modal-default-button:first-child{
+    border-right: 1px solid #d0cfcf;
+}

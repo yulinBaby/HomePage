@@ -1,0 +1,35 @@
+*{padding:0;margin:0;}
+div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;}
+/*img,input{border:none;vertical-align:middle;}*/
+html{overflow-y:scroll;}
+ul,ol{list-style-type:none;}
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+body{
+    font-family: PingFangSC-Light, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-style: normal;
+    font-weight:normal;
+    font-family: PingFangSC-Regular, sans-serif;
+}
+
+.clear{clear:both;font-size:1px;height:0;visibility:hidden;line-height:0;}
+.clearfix:after{content:"";display:block;clear:both; visibility: hidden;width: 0;height: 0;}
+.clearfix{zoom:1;}
+i,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}

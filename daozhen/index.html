@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能导诊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="关键字搜索">
+    <meta name="author" content="描述作者资料">
+    <meta name="description" content="网页描述">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p class="role"><span>请选择角色</span><span>并点击您想要诊治的部位</span></p>
+<div class="mask-layer">
+    <p class="right-icon"><img src="images/right.png" alt=""></p>
+</div>
+<div class="pup-up-box">
+    <div class="list_classify">
+        <ul class="list_ul" id="list_ul">
+            <li value="1" class="on"><a href="javascript:void(0)">全身</a></li>
+            <li value="2"><a href="javascript:void(0)">皮肤</a></li>
+            <li value="3"><a href="javascript:void(0)">四肢</a></li>
+            <li value="4"><a href="javascript:void(0)">下肢</a></li>
+            <li value="5"><a href="javascript:void(0)">上肢</a></li>
+            <li value="6"><a href="javascript:void(0)">生殖器</a></li>
+            <li value="7"><a href="javascript:void(0)">排泄部</a></li>
+            <li value="8"><a href="javascript:void(0)">臀部</a></li>
+            <li value="9"><a href="javascript:void(0)">腰部</a></li>
+            <li value="10"><a href="javascript:void(0)">腹部</a></li>
+            <li value="11"><a href="javascript:void(0)">背部</a></li>
+            <li value="12"><a href="javascript:void(0)">胸部</a></li>
+            <li value="13"><a href="javascript:void(0)">颈部</a></li>
+            <li value="14"><a href="javascript:void(0)">耳眼鼻喉</a></li>
+            <li value="15"><a href="javascript:void(0)">头部</a></li>
+            <li value="16"><a href="javascript:void(0)">颈部</a></li>
+            <li value="17"><a href="javascript:void(0)">其他</a></li>
+        </ul>
+    </div>
+    <div class="classify_main">
+        <div class="tab_list">
+            <ul class="tab_main_list" style="display: block;">
+                <li><a href="javascript:void(0)">发热</a></li>
+                <li><a href="javascript:void(0)">感冒症状</a></li>
+                <li><a href="javascript:void(0)">寒战</a></li>
+                <li><a href="javascript:void(0)">疑似流感或有接触史</a></li>
+                <li><a href="javascript:void(0)">全身肌肉疼痛</a></li>
+                <li><a href="javascript:void(0)">体重问题（指南）</a></li>
+                <li><a href="javascript:void(0)">睡眠问题（指南）</a></li>
+                <li><a href="javascript:void(0)">无症状的血压问题</a></li>
+                <li><a href="javascript:void(0)">孕期高血压、疲乏或面部肿胀</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">皮肤瘙痒</a></li>
+                <li><a href="javascript:void(0)">水泡</a></li>
+                <li><a href="javascript:void(0)">癣</a></li>
+                <li><a href="javascript:void(0)">疖</a></li>
+                <li><a href="javascript:void(0)">玫瑰痤疮</a></li>
+                <li><a href="javascript:void(0)">胼胝（老茧）</a></li>
+                <li><a href="javascript:void(0)">烧伤</a></li>
+                <li><a href="javascript:void(0)">烫伤</a></li>
+                <li><a href="javascript:void(0)">冻伤（指南）</a></li>
+                <li><a href="javascript:void(0)">伤口愈合活瘢痕问题</a></li>
+                <li><a href="javascript:void(0)">动物或人咬伤，动物抓伤或接触</a></li>
+                <li><a href="javascript:void(0)">昆虫叮咬</a></li>
+                <li><a href="javascript:void(0)">鸡眼</a></li>
+                <li><a href="javascript:void(0)">鸡身体穿洞或纹身问题（指南）</a></li>
+                <li><a href="javascript:void(0)">黄疸</a></li>
+                <li><a href="javascript:void(0)">带状疱疹</a></li>
+                <li><a href="javascript:void(0)">荨麻疹</a></li>
+                <li><a href="javascript:void(0)">皮炎</a></li>
+                <li><a href="javascript:void(0)">皮疹</a></li>
+                <li><a href="javascript:void(0)">皮肤过敏反应</a></li>
+                <li><a href="javascript:void(0)">皮肤新生物、痣、疣或色斑</a></li>
+                <li><a href="javascript:void(0)">皮内异物</a></li>
+                <li><a href="javascript:void(0)">皮下肿块</a></li>
+                <li><a href="javascript:void(0)">皮肤撕裂</a></li>
+                <li><a href="javascript:void(0)">皮肤问题（除皮疹外）</a></li>
+                <li><a href="javascript:void(0)">擦伤</a></li>
+                <li><a href="javascript:void(0)">穿刺伤</a></li>
+                <li><a href="javascript:void(0)">褥疮</a></li>
+                <li><a href="javascript:void(0)">湿疹</a></li>
+                <li><a href="javascript:void(0)">尿布疹或会阴皮疹</a></li>
+                <li><a href="javascript:void(0)">痤疮</a></li>
+                <li><a href="javascript:void(0)">婴儿皮肤问题</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">麻木</a></li>
+                <li><a href="javascript:void(0)">麻痹</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">髋骨损伤</a></li>
+                <li><a href="javascript:void(0)">跛行（未受伤）</a></li>
+                <li><a href="javascript:void(0)">足部疼痛</a></li>
+                <li><a href="javascript:void(0)">足部问题</a></li>
+                <li><a href="javascript:void(0)">下肢出血</a></li>
+                <li><a href="javascript:void(0)">下肢骨折</a></li>
+                <li><a href="javascript:void(0)">下肢关节疼痛或肿胀</a></li>
+                <li><a href="javascript:void(0)">下肢肌肉筋挛</a></li>
+                <li><a href="javascript:void(0)">下肢肌肉无力</a></li>
+                <li><a href="javascript:void(0)">下肢疼痛</a></li>
+                <li><a href="javascript:void(0)">腿部或足部损伤</a></li>
+                <li><a href="javascript:void(0)">腿部疼痛</a></li>
+                <li><a href="javascript:void(0)">腿部问题</a></li>
+                <li><a href="javascript:void(0)">膝部损伤</a></li>
+                <li><a href="javascript:void(0)">跛行（受伤后）</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">手臂疼痛</a></li>
+                <li><a href="javascript:void(0)">手臂或手部问题</a></li>
+                <li><a href="javascript:void(0)">手部损伤</a></li>
+                <li><a href="javascript:void(0)">手部疼痛</a></li>
+                <li><a href="javascript:void(0)">手部问题</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">阴道异物 | 生殖道异物</a></li>
+                <li><a href="javascript:void(0)">痛经</a></li>
+                <li><a href="javascript:void(0)">疑似或确认绝经</a></li>
+                <li><a href="javascript:void(0)">阴道出血</a></li>
+                <li><a href="javascript:void(0)">阴道分泌物</a></li>
+                <li><a href="javascript:void(0)">孕期阴道出血或血性分泌物</a></li>
+                <li><a href="javascript:void(0)">可能是孕期阴道真菌感染</a></li>
+                <li><a href="javascript:void(0)">紧急避孕</a></li>
+                <li><a href="javascript:void(0)">胎动减少或消失</a></li>
+                <li><a href="javascript:void(0)">妊娠、分娩、流产相关问题</a></li>
+                <li><a href="javascript:void(0)">月经过期</a></li>
+                <li><a href="javascript:void(0)">月经问题</a></li>
+                <li><a href="javascript:void(0)">包皮环切问题</a></li>
+                <li><a href="javascript:void(0)">阴虱</a></li>
+                <li><a href="javascript:void(0)">生殖器问题</a></li>
+                <li><a href="javascript:void(0)">生殖器受伤（指南）</a></li>
+                <li><a href="javascript:void(0)">生殖器疱疹</a></li>
+                <li><a href="javascript:void(0)">生殖器念珠菌感染</a></li>
+                <li><a href="javascript:void(0)">性交疼痛</a></li>
+                <li><a href="javascript:void(0)">性传播感染</a></li>
+                <li><a href="javascript:void(0)">性虐待或性侵犯</a></li>
+                <li><a href="javascript:void(0)">血精</a></li>
+                <li><a href="javascript:void(0)">产后问题</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">便秘</a></li>
+                <li><a href="javascript:void(0)">遗尿</a></li>
+                <li><a href="javascript:void(0)">尿痛</a></li>
+                <li><a href="javascript:void(0)">尿失禁</a></li>
+                <li><a href="javascript:void(0)">尿频和夜尿增多</a></li>
+                <li><a href="javascript:void(0)">尿路感染</a></li>
+                <li><a href="javascript:void(0)">泌尿系统问题</a></li>
+                <li><a href="javascript:void(0)">排尿困难</a></li>
+                <li><a href="javascript:void(0)">血尿</a></li>
+                <li><a href="javascript:void(0)">血便</a></li>
+                <li><a href="javascript:void(0)">排便异常（指南）</a></li>
+                <li><a href="javascript:void(0)">痔</a></li>
+                <li><a href="javascript:void(0)">直肠初学</a></li>
+                <li><a href="javascript:void(0)">肛门疼痛</a></li>
+                <li><a href="javascript:void(0)">肛门瘙痒</a></li>
+                <li><a href="javascript:void(0)">肛门或直肠问题</a></li>
+                <li><a href="javascript:void(0)">可能是孕期尿路感染</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">臀部或尾骨受伤（指南）</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">腰痛</a></li>
+                <li><a href="javascript:void(0)">腰痛</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">恶心</a></li>
+                <li><a href="javascript:void(0)">孕期腹痛（指南）</a></li>
+                <li><a href="javascript:void(0)">孕期恶心或呕吐</a></li>
+                <li><a href="javascript:void(0)">脐带问题</a></li>
+                <li><a href="javascript:void(0)">吐奶（指南）</a></li>
+                <li><a href="javascript:void(0)">膀胱问题</a></li>
+                <li><a href="javascript:void(0)">吞入异物（指南）</a></li>
+                <li><a href="javascript:void(0)">胀气或腹胀（指南）</a></li>
+                <li><a href="javascript:void(0)">腹泻</a></li>
+                <li><a href="javascript:void(0)">受伤后腹痛（指南）</a></li>
+                <li><a href="javascript:void(0)">腹部绞痛</a></li>
+                <li><a href="javascript:void(0)">腹痛</a></li>
+                <li><a href="javascript:void(0)">胃痛</a></li>
+                <li><a href="javascript:void(0)">呃逆（打嗝）</a></li>
+                <li><a href="javascript:void(0)">呕吐</a></li>
+                <li><a href="javascript:void(0)">疑似分娩或流产</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">上背痛</a></li>
+                <li><a href="javascript:void(0)">背部损伤（指南）</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">咳嗽</a></li>
+                <li><a href="javascript:void(0)">儿童胸部疼痛或不适（指南）</a></li>
+                <li><a href="javascript:void(0)">乳房问题</a></li>
+                <li><a href="javascript:void(0)">心脏病发作的症状</a></li>
+                <li><a href="javascript:void(0)">心悸或心律失常</a></li>
+                <li><a href="javascript:void(0)">心绞痛</a></li>
+                <li><a href="javascript:void(0)">慢性肺病急性加重</a></li>
+                <li><a href="javascript:void(0)">胸部损伤（指南）</a></li>
+                <li><a href="javascript:void(0)">胸部疼痛或不适</a></li>
+                <li><a href="javascript:void(0)">胸疼</a></li>
+                <li><a href="javascript:void(0)">烧心</a></li>
+                <li><a href="javascript:void(0)">呼吸问题</a></li>
+                <li><a href="javascript:void(0)">呼吸困难</a></li>
+                <li><a href="javascript:void(0)">气短</a></li>
+                <li><a href="javascript:void(0)">喘息</a></li>
+                <li><a href="javascript:void(0)">妊娠、哺乳相关乳房问题（指南）</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">咽痛</a></li>
+                <li><a href="javascript:void(0)">咽喉痛</a></li>
+                <li><a href="javascript:void(0)">咽部异物感（指南）</a></li>
+                <li><a href="javascript:void(0)">吞咽困难（指南）</a></li>
+                <li><a href="javascript:void(0)">声嘶或喉炎（指南）</a></li>
+                <li><a href="javascript:void(0)">颈部疼痛（无外伤）</a></li>
+                <li><a href="javascript:void(0)">颈部损伤</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">眼外伤</a></li>
+                <li><a href="javascript:void(0)">口腔异味（口臭）</a></li>
+                <li><a href="javascript:void(0)">口腔问题</a></li>
+                <li><a href="javascript:void(0)">口腔溃疡</a></li>
+                <li><a href="javascript:void(0)">口唇疱疹</a></li>
+                <li><a href="javascript:void(0)">烦渴（指南）</a></li>
+                <li><a href="javascript:void(0)">口部问题</a></li>
+                <li><a href="javascript:void(0)">牙齿问题</a></li>
+                <li><a href="javascript:void(0)">长牙</a></li>
+                <li><a href="javascript:void(0)">出牙</a></li>
+                <li><a href="javascript:void(0)">磨牙</a></li>
+                <li><a href="javascript:void(0)">言语问题</a></li>
+                <li><a href="javascript:void(0)">下颌问题</a></li>
+                <li><a href="javascript:void(0)">耳外炎（游泳者耳）</a></li>
+                <li><a href="javascript:void(0)">耳部或听力问题（无疼痛）</a></li>
+                <li><a href="javascript:void(0)">眼睛发红</a></li>
+                <li><a href="javascript:void(0)">眼部问题</a></li>
+                <li><a href="javascript:void(0)">眼部疼痛</a></li>
+                <li><a href="javascript:void(0)">睑腺炎（麦粒肿）</a></li>
+                <li><a href="javascript:void(0)">眼内异物</a></li>
+                <li><a href="javascript:void(0)">畏光</a></li>
+                <li><a href="javascript:void(0)">视物旋转</a></li>
+                <li><a href="javascript:void(0)">视力问题</a></li>
+                <li><a href="javascript:void(0)">耳痛</a></li>
+                <li><a href="javascript:void(0)">耳部疼痛</a></li>
+                <li><a href="javascript:void(0)">耳部损伤（指南）</a></li>
+                <li><a href="javascript:void(0)">耳部感染</a></li>
+                <li><a href="javascript:void(0)">打喷嚏</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">头痛</a></li>
+                <li><a href="javascript:void(0)">面部肿胀</a></li>
+                <li><a href="javascript:void(0)">面部外伤</a></li>
+                <li><a href="javascript:void(0)">面部疼痛（指南）</a></li>
+                <li><a href="javascript:void(0)">癫痫发作</a></li>
+                <li><a href="javascript:void(0)">晕厥（晕倒）</a></li>
+                <li><a href="javascript:void(0)">意识模糊</a></li>
+                <li><a href="javascript:void(0)">眩晕</a></li>
+                <li><a href="javascript:void(0)">头发或头皮问题</a></li>
+                <li><a href="javascript:void(0)">脑部外伤</a></li>
+                <li><a href="javascript:void(0)">头部外伤</a></li>
+                <li><a href="javascript:void(0)">头晕</a></li>
+                <li><a href="javascript:void(0)">偏头痛</a></li>
+                <li><a href="javascript:void(0)">孕妇头痛</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">颈部疼痛或僵硬</a></li>
+                <li><a href="javascript:void(0)">咽吼疼痛</a></li>
+                <li><a href="javascript:void(0)">吞咽困难</a></li>
+                <li><a href="javascript:void(0)">甲状腺肿大</a></li>
+            </ul>
+            <ul class="tab_main_list">
+                <li><a href="javascript:void(0)">中暑或晒伤</a></li>
+                <li><a href="javascript:void(0)">中毒防控问题</a></li>
+                <li><a href="javascript:void(0)">物质成瘾吸毒问题</a></li>
+                <li><a href="javascript:void(0)">疑似季节性过敏</a></li>
+                <li><a href="javascript:void(0)">腺体肿大</a></li>
+                <li><a href="javascript:void(0)">高压注射性损伤</a></li>
+                <li><a href="javascript:void(0)">手术或医疗操作前后相关问题（无症状）</a></li>
+                <li><a href="javascript:void(0)">石膏相关问题</a></li>
+                <li><a href="javascript:void(0)">根据护士判断的书的临床评估</a></li>
+                <li><a href="javascript:void(0)">过度哭闹（指南）</a></li>
+                <li><a href="javascript:void(0)">婴儿不适</a></li>
+                <li><a href="javascript:void(0)">割伤</a></li>
+                <li><a href="javascript:void(0)">高处（高于1米）跌落</a></li>
+                <li><a href="javascript:void(0)">有症状的血糖问题</a></li>
+                <li><a href="javascript:void(0)">无症状的血糖问题</a></li>
+                <li><a href="javascript:void(0)">糖尿病管理问题</a></li>
+                <li><a href="javascript:void(0)">疝</a></li>
+                <li><a href="javascript:void(0)">震颤</a></li>
+                <li><a href="javascript:void(0)">躁狂或精神病行为或想法</a></li>
+                <li><a href="javascript:void(0)">神经问题</a></li>
+                <li><a href="javascript:void(0)">情绪抑郁</a></li>
+                <li><a href="javascript:void(0)">焦虑</a></li>
+                <li><a href="javascript:void(0)">行为问题</a></li>
+                <li><a href="javascript:void(0)">孕期外伤</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!--pup-up-box-->
+<div class="person-pic">
+    <div class="img-wrap">
+        <div class="man-z person" id="man-z">
+            <img src="images/man-z.png" alt="男性-正面">
+            <p class="click-area">
+                <span class="m-header man-header"></span>
+                <span class="m-neck"></span>
+                <span class="m-body">
+                    <i class="arm l-arm"></i>
+                    <span class="c-center">
+                        <em class="chest"></em>
+                        <em class="belly"></em>
+                        <em class="genitals man-genitals"></em>
+                        <em class="leg man-leg"></em>
+                    </span>
+                    <i class="arm r-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="woman-z person" id="woman-z">
+            <img src="images/woman-z.png" alt="女性-正面">
+            <p class="click-area">
+                <span class="m-header woman-header"></span>
+                <span class="m-neck woman-neck"></span>
+                <span class="m-body wo-body">
+                    <i class="arm l-arm wo-arm"></i>
+                    <span class="c-center woman-center">
+                        <em class="chest wo-chest"></em>
+                        <em class="belly wo-belly"></em>
+                        <em class="genitals wo-genitals"></em>
+                        <em class="leg wo-leg"></em>
+                    </span>
+                    <i class="arm r-arm wo-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="man-b person" id="man-b">
+            <img src="images/man-f.png" alt="男性-背面">
+            <p class="click-area">
+                <span class="m-header"></span>
+                <span class="m-neck"></span>
+                <span class="m-body">
+                    <i class="arm l-arm"></i>
+                    <span class="c-center">
+                        <em class="man-back"></em>
+                        <em class="man-arse"></em>
+                        <em class="leg man-leg"></em>
+                    </span>
+                    <i class="arm r-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="woman-b person" id="woman-b">
+            <img src="images/woman-b.png" alt="女性-背面">
+            <p class="click-area">
+                <span class="m-header woman-header"></span>
+                <span class="m-neck woman-neck"></span>
+                <span class="m-body wo-body">
+                    <i class="arm l-arm l-b-arm wo-arm"></i>
+                    <span class="c-center woman-center">
+                        <em class="man-back woman-back"></em>
+                        <em class="man-arse woman-arse"></em>
+                        <em class="leg woman-leg"></em>
+                    </span>
+                    <i class="arm r-arm r-b-arm wo-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="boy-z person" id="boy-z">
+            <img src="images/boy-z.png" alt="男孩-正面">
+            <p class="click-area">
+                <span class="m-header boy-header"></span>
+                <span class="m-neck boy-neck"></span>
+                <span class="m-body boy-body">
+                    <i class="arm l-arm l-b-arm boy-arm"></i>
+                    <span class="c-center boy-center">
+                        <em class="chest boy-chest"></em>
+                        <em class="belly boy-belly"></em>
+                        <em class="genitals boy-genitals"></em>
+                        <em class="leg boy-leg"></em>
+                    </span>
+                    <i class="arm r-arm r-b-arm boy-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="boy-b person" id="boy-b">
+            <img src="images/boy-f.png" alt="男孩-背面">
+            <p class="click-area">
+                <span class="m-header boy-header"></span>
+                <span class="m-neck boy-neck"></span>
+                <span class="m-body boy-body">
+                    <i class="arm l-arm l-b-arm boy-arm"></i>
+                    <span class="c-center boy-center">
+                        <em class="man-back boy-back"></em>
+                        <em class="man-arse boy-arse"></em>
+                        <em class="leg boy-leg"></em>
+                    </span>
+                    <i class="arm r-arm r-b-arm boy-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="girl-z person" id="girl-z">
+            <img src="images/girl-z.png" alt="女孩-正面">
+            <p class="click-area">
+                <span class="m-header girl-header"></span>
+                <span class="m-neck girl-neck"></span>
+                <span class="m-body girl-body">
+                    <i class="arm l-arm l-b-arm girl-arm"></i>
+                    <span class="c-center girl-center">
+                        <em class="chest girl-chest"></em>
+                        <em class="belly girl-belly"></em>
+                        <em class="genitals girl-genitals"></em>
+                        <em class="leg girl-leg"></em>
+                    </span>
+                    <i class="arm r-arm r-b-arm girl-arm"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="girl-b person" id="girl-b">
+            <img src="images/girl-f.png" alt="女孩-背面">
+            <p class="click-area">
+                <span class="m-header girl-header"></span>
+                <span class="m-neck girl-neck"></span>
+                <span class="m-body girl-body">
+                    <i class="arm l-arm l-b-arm girl-arm"></i>
+                    <span class="c-center girl-center">
+                        <em class="man-back boy-back girl-back"></em>
+                        <em class="man-arse boy-arse girl-arse"></em>
+                        <em class="leg boy-leg"></em>
+                    </span>
+                    <i class="arm r-arm  r-b-arm girl-arm"></i>
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="choose">
+        <div class="sex choose-class">
+            <input type="radio" name="sex" value="0" class="checkSex" checked=checked>
+            <input type="radio" name="sex" value="1" class="checkSex">
+        </div>
+        <div class="person-classify choose-class">
+            <input type="radio" name="person" class="checkAge" value="2" checked=checked>
+            <input type="radio" name="person" class="checkAge" value="3">
+        </div>
+        <div class="turn-back"><span></span>转身</div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    window.onresize=function () {
+        document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+    };
+</script>
+</html>

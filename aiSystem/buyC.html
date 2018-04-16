@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NB人工智能交易系统</title>
+    <meta name="keywords" content="NB，new bloc，，区块链，ico，比特币，以太坊">
+    <meta name="description" content="New Bloc 是全球第一个交易数字资产的系统">
+    <link rel="SHORTCUT ICON" href="ai.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body style="background-color: #000">
+<div class="wrap">
+    <div class="content">
+        <div class="main-l fl">
+            <ul class="main-nav" id="mainNav">
+                <li class="on"><a href="javascript:void(0)">imtoken</a></li>
+                <li><a href="javascript:void(0)">钱包2</a></li>
+                <li><a href="javascript:void(0)">钱包3</a></li>
+                <li><a href="javascript:void(0)">钱包4</a></li>
+            </ul>
+        </div>
+        <div class="main-r fr">
+            <div class="tab-main" style="display: block">
+                <h3 class="buy-tab-title">购买NBC</h3>
+                <p class="buy-tab-info">1.购买流程</p>
+                <p class="buy-tab-info">打开imtoken，进入eth界面，点击进入转账页面</p>
+                <img class="buy-tab-pic" src="images/buy1.png" alt="">
+                <p class="buy-tab-info">在转账页面收款人地址一栏，输入官网指定的购买地址以及金额等</p>
+                <img class="buy-tab-pic"  src="images/buy2.png" alt="">
+
+                <p class="buy-tab-info">2.查看购买的NBC</p>
+                <img class="buy-tab-pic" src="images/buy3.png" alt="">
+                <img class="buy-tab-pic"  src="images/buy3.png" alt="">
+                <img class="buy-tab-pic"  src="images/buy5.png" alt="">
+
+                <p class="buy-tab-info">1.下载官方钱包或其他个人钱包（注意以太币一定要转到个人钱包后再进行购买），保证钱包里有足够的eth。</p>
+                <p class="buy-tab-info">2.向网站给出的购买合约地址发送eth</p>
+                <img class="buy-tab-pic2" src="images/buy6.png" alt="">
+                <p class="buy-tab-info">3.查看购买所得的NB</p>
+                <p class="buy-tab-info buy-tab-info2">3.1 ) 点击CONTRACTS</p>
+                <img class="buy-tab-pic2" src="images/buy7.png" alt="">
+                <p class="buy-tab-info buy-tab-info2">3.2 ) 点击查看合约</p>
+                <img class="buy-tab-pic2" src="images/buy8.png" alt="">
+                <p class="buy-tab-info buy-tab-info2">3.3 ) 添加NB合约地址</p>
+                <img class="buy-tab-pic2" src="images/buy9.png" alt="">
+                <p class="buy-tab-info buy-tab-info2">3.4 ) 查看NB数量</p>
+                <img class="buy-tab-pic2" src="images/buy10.png" alt="">
+            </div>
+            <!--<div class="tab-main">2</div>-->
+            <!--<div class="tab-main">3</div>-->
+            <!--<div class="tab-main">4</div>-->
+        </div>
+    </div>
+</div>
+<div id="goTop" class="goTop"><img src="images/top.png"  alt=""></div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/test.js"></script>
+<script src="js/english.js"></script>
+<script src="js/chinese.js"></script>
+<script src="js/japanese.js"></script>
+<script src="js/korean.js"></script>
+<script>
+    var oTop = $('#goTop');
+    var nav_list = $('#nav_list li');
+    oTop.fadeOut();
+    //    $('.wrap').hide();
+    window.onload = function(){
+//        console.log($("#productLHeight").height());
+        $('.buy-text-c').show();
+        $('.buy-text-e').hide();
+        var img=new Image();
+        img.src='images/page_bg.png';
+        if(img.width==0){
+            console.log('网络不好！')
+        }
+    };
+    $(window).scroll(function(){
+        var iTop = $(window).scrollTop();//鼠标滚动的距离
+        if(iTop>=$('#page2').height()){
+            oTop.fadeIn();
+        }else{
+            oTop.fadeOut();
+        }
+    });
+    oTop.click(function(){
+        $('body,html').animate({"scrollTop":0},500)
+    });
+    //    nav_list.click(function(){
+    //        $(this).addClass('on').siblings().removeClass('on');
+    //    })
+//    $("#mainNav li").click(function(){
+//        var _index = $(this).index();
+//        $(this).addClass('on').siblings().removeClass('on');
+//        $('.tab-main').hide().eq(_index).show();
+//    })
+</script>
+</html>

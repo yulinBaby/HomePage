@@ -1,0 +1,342 @@
+.nav{
+    height: 90px;
+    width: 100%;
+    background: #fff;
+}
+.set-w{
+    width: 1024px;
+    margin: 0 auto;
+    /*background: #f0a30a;*/
+}
+.logo{
+    width: 80px;
+    height: 46px;
+    margin: 22px 5px;
+}
+.nav-list li{
+    float: left;
+    line-height: 90px;
+    margin-right: 20px;
+}
+.nav-list li a{
+    color: #333;
+    font-size: 14px;
+}
+.nav-list .on a,.nav-list li:hover a{
+    color: #9085f9;
+}
+.nav-list li:last-child{
+    margin-right: 0;
+}
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.b1 {
+    background: url(../images/bg.png)  top center no-repeat;
+}
+.banner .bo1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400%;
+    height: 80px;
+    background: url(../images/wave1.png) repeat-x;
+    -webkit-animation: Bolang 9s linear infinite;
+    animation: Bolang 9s linear infinite;
+    z-index: 33;
+}
+.banner .bo2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400%;
+    height: 86px;
+    background: url(../images/wave2.png) 100px 0 repeat-x;
+    -webkit-animation: Bolang 4s linear infinite;
+    animation: Bolang 4s linear infinite;
+    z-index: 32;
+}
+@-webkit-keyframes Bolang{
+    0%{right:-385px;}
+    100%{right:-770px;}
+}
+@keyframes Bolang{
+    0%{right:-385px;}
+    100%{right:-770px;}
+}
+.banner-w{
+    position: relative;
+    height: 100%;
+    width: 1024px;
+    margin: 0 auto;
+}
+.phone-bg{
+    width: 515px;
+    height: 342px;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    z-index: 9;
+}
+.logo-banner{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 119px;
+    width: 366px;
+}
+.sercer{
+    width: 280px;
+    position: absolute;
+    bottom: 150px;
+    right: 30px;
+}
+.sercer-pic{
+    width: 125px;
+}
+.sercer-pic span{
+    font-size: 18px;
+    color: #fff;
+    font-family: "冬青黑体简体 中文";
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+.sercer-pic img{
+    width: 100%;
+    height: auto;
+}
+.nav-c{
+    background: #fff;
+    width: 100%;
+    padding-bottom: 80px;
+}
+.nav-c-list li{
+    float: left;
+    width: 180px;
+    margin-right: 100px
+}
+.nav-c-list li:last-child{
+    margin-right: 0;
+}
+.nav-c-list li img{
+    width: 141px;
+    height: 141px;
+    margin: 15px auto;
+    display: block;
+}
+.nav-info{
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "Hiragino Sans GB w6";
+}
+.content-ask,.content-doc{
+    width: 100%;
+    background: #f8f8f8;
+    padding-top: 90px;
+}
+.title-info{
+    color: #b2a0ff;
+    font-size: 42px;
+    line-height: 42px;
+    font-family: "Hiragino Sans GB w6";
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.title-info:before{
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #b2a0ff;
+    top: 21px;
+    width: 30%;
+    left: 0;
+}
+.title-info:after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #b2a0ff;
+    top: 21px;
+    width: 30%;
+    right: 0;
+}
+.ask-text{
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    text-align: center;
+    padding-top: 20px;
+}
+.ask-list{
+    margin-top: 70px;
+}
+.ask-list li{
+    float: left;
+    width: 234px;
+    margin-right: 26px;
+}
+.ask-list li img{
+    width: 186px;
+    height: 187px;
+    margin: 0 auto;
+}
+.ask-list li:last-child{
+    margin-right: 0;
+}
+.ask-info{
+    position: relative;
+    margin-top: 70px;
+    padding-bottom: 120px;
+}
+.ask-info:before{
+    content: "";
+    border-top: 1px dashed #d2d0db;
+    position: absolute;
+    top: -35px;
+    width: 140px;
+    left: 47px;
+}
+.ask-info span,.content-doc-list li p{
+    font-size: 20px;
+    color: #666;
+    font-family: "冬青黑体简体 中文";
+    display: block;
+    text-align: center;
+    line-height: 28px;
+}
+.content-doc{
+    background: #fff;
+}
+.doc-title-info:after,.doc-title-info:before{
+    width: 34%;
+}
+.office-title-info:after,.office-title-info:before{
+    width: 26%;
+}
+.content-doc-list{
+    margin-top: 130px;
+    padding-bottom: 230px;
+}
+.content-doc-list li{
+    float: left;
+    width: 311px;
+    margin-right: 26px;
+}
+.content-doc-list li:last-child{
+    margin-right: 0;
+}
+.content-doc-list li p{
+    padding-top: 35px;
+}
+.office-list{
+    width: 740px;
+    margin: 110px auto 0;
+    padding-bottom: 100px;
+}
+.office-list li{
+    float: left;
+    width: 160px;
+    height: 156px;
+    position: relative;
+    margin-right: 130px;
+    margin-bottom: 45px;
+}
+.office-list li:nth-child(3n){
+    margin-right: 0;
+}
+.position-box{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background: url("../images/hdj.png") no-repeat;
+    width: 159px;
+    height: 34px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    font-family: "冬青黑体简体 中文";
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    background: #b8a9ff;
+    padding-bottom: 145px;
+    padding-top: 120px;
+}
+.foot-pic-l{
+    margin-left: 240px;
+}
+.foot-pic-r{
+    margin-right: 240px;
+}
+.foot-pic{
+    width: 204px;
+}
+.foot-pic p{
+    text-align: center;
+    color: #fff;
+    font-family: "冬青黑体简体 中文";
+    font-size: 24px;
+}
+.copyright{
+    clear: both;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright p{
+    text-align: center;
+    font-family: "冬青黑体简体 中文";
+    font-size: 20px;
+    color: #fff;
+    line-height: 32px;
+}
+.dd-list{
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    height: 150px;
+    margin-top: -75px;
+    width: 20px;
+    z-index: 999;
+}
+.dd-list li{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12.5px;
+    background: url("../images/dd.png") no-repeat;
+    background-size: 20px;
+}
+.dd-list li:last-child{
+    margin-bottom: 0;
+}
+.dd-list .on{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12.5px;
+    background: url("../images/dd_on.png") no-repeat;
+    background-size: 20px;
+}
+.goTop{
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+    width: 64px;
+    height: 64px;
+    background: url("../images/top.png");
+    background-size: 64px;
+    z-index: 999;
+}
+.foot_text{
+    padding: 0 200px;
+    text-align: center;
+    font-family: "冬青黑体简体 中文";
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 60px;
+}
